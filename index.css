@@ -339,13 +339,13 @@ form{
     padding: 20px;
     box-shadow: var(--colorOne) 1px 2px 5px 0px;
     border-radius: 20px;
+    margin-bottom: 100px;
 }
 
 form div{
     width: 90%;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 20px;
 }
 
 form input, textarea{
@@ -355,10 +355,23 @@ form input, textarea{
     outline: none;
     border-radius: 10px;
     box-shadow: var(--colorOne) 1px 2px 5px 0px;
+    color: var(--colorOne);
+    background-color: var(--darkColor);
     text-align: center;
+    resize: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form div button{
+form .btnDiv{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+form .btnDiv button{
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -366,6 +379,6 @@ form div button{
     outline: none;
     background-color: var(--darkColor);
     box-shadow: var(--colorOne) 1px 2px 5px 0px;
+    color: var(--colorOne);
     margin: 0 auto;
-    text-align: center;
 }
