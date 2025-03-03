@@ -15,33 +15,394 @@ h1, h2, h3{
     font-weight: bolder;
 }
 
-.mainPage{
-    width: screen;
-    min-height: 600px;
-    background-color: var(--darkColor);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    gap: 10px;
-    margin-bottom: 100px;
+@media(max-width: 500px){
+    .mainPage{
+        margin: 0 auto;
+        max-width: 450px;
+        height: auto;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .mainPage .box .boxOne{
+        font-size: larger;
+    }
+    .ExAndProjects{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .Experience{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
 }
 
-.mainPage .box .boxOne{
-    font-weight: bolder;
-    color: var(--colorOne);
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
-    animation: moveMainText 1s linear;
-}
+@media (min-width: 700px) {
+    .mainPage{
+        width: screen;
+        min-height: 600px;
+        background-color: var(--darkColor);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    
+    .mainPage .box .boxOne{
+        font-weight: bolder;
+        color: var(--colorOne);
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        animation: moveMainText 1s linear;
+    }
+    
+    .imgMode{
+        animation: moveThemeChanger;
+        animation-duration: 3.5s;
+    }
+    .mainPage .box .boxOne span{
+        /* background-color: var(--colorOne); */
+        color: var(--colorOne);
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        border-radius: 10px;
+        padding: 10px;
+        animation: moveMainText 3s linear;
+    }
+    
+    .mainPage .box .boxOne img{
+        width: 100px;
+        margin-top: 20px;
+        animation: moveMainText 3s linear;
+    }
+    
+    .mainPage .box .boxTwo{
+        text-align: center;
+        text-decoration: none;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: moveLinkBtns 3s linear 1;
+    }
 
-.imgMode{
-    animation: moveThemeChanger;
-    animation-duration: 3.5s;
+    .linkedin{
+        background-color: var(--colorOne);
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bolder;
+        color: var(--darkColor);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--colorOne) 2px solid;
+    }
+    
+    .linkedin:hover{
+        background-color: var(--darkColor);
+        color: var(--colorOne);
+    }
+    
+    .github{
+        background-color: var(--darkColor);
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bolder;
+        color: var(--colorOne);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--colorOne);
+    }
+    
+    .github:hover{
+        background-color: var(--colorOne);
+        color: var(--darkColor);
+    }
+    .mainPage .box .boxThree{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mainPage .box .boxThree a{
+        flex-wrap: wrap;
+        background-color: var(--darkColor);
+        width: fit-content;
+        margin-top: 40px;
+        padding: 6px;
+        height: 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: var(--colorOne);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--colorOne);
+        /* border: none; */
+        animation: LinksAnimation 2s linear 1;
+    }
+    
+    .mainPage .box .boxThree a:hover{
+        background-color: var(--colorOne);
+        color: var(--darkColor);
+    }
+
+    .about{
+        color: var(--darkColor);
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    
+    .about img{
+        background-color: var(--darkColor);
+        color: var(--colorOne);
+        text-align: center;
+        border-radius: 100%;
+        width: 100px;
+    }
+    
+    
+    .about .head{
+        width: 270px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        background-color: var(--darkColor);
+        color: var(--colorOne);
+    }
+    
+    .about .head h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .about .text{
+        background-color: var(--darkColor);
+        color: var(--colorOne);
+        text-align: center;
+        width: 96%;
+        padding: 20px;
+    }
+    
+    body hr{
+        width: 70%;
+        height: 1px;
+        box-shadow: var(--colorOne) 1px 0px 3px 1px;
+        background-color: var(--colorOne);
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .skills {
+        height: 300px;
+        padding: 20px;
+        overflow: hidden;
+    }
+    
+    .skills .div {
+        display: flex;
+        animation: moveRow 15s linear infinite;
+        position: relative;
+        animation-direction: alternate-reverse;
+    }
+    
+    .skills div div {
+        min-width: 200px;
+        max-width: auto;
+        height: 50px;
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        color: var(--colorOne);
+        text-align: center;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    
+    .skills h2 {
+        color: var(--colorOne);
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .Experience{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        color: var(--colorOne);
+        text-align: center;
+        box-shadow: var(--colorOne) 1px 5px 10px 3px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .exBox{
+        width: 40%;
+        height: auto;
+        box-shadow: var(--colorOne) 1px 2px 5px 3px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .exBox:hover{
+        box-shadow: var(--colorOne) 1px 5px 10px 3px;
+    }
+    
+    .exBox h2{
+        font-size: 20px;
+    }
+    
+    .ExAndProjects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+    
+    .ExAndProjects .Experience {
+        width: 40%;
+        height: 300px auto;
+        border-radius: 20px;
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        padding: 20px;
+    }
+    
+    .ExAndProjects .img, img{
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+    .ExAndProjects .img{
+        text-align: center;
+        width: 200px;
+    }
+    
+    .ExAndProjects .txt{
+        margin: 0 auto;
+    }
+    
+    .readMore{
+        width: 100px;
+        min-height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: var(--colorOne);
+        background-color: var(--darkColor);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .readMore a{
+        text-decoration: none;
+        color: var(--colorOne);
+        font-size: 17px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    .readMore:hover{
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+    }
+    
+    
+    form{
+        margin-top: 200px;
+        width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    
+    form div{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    form input, textarea{
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        color: var(--colorOne);
+        background-color: var(--darkColor);
+        text-align: center;
+        resize: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* form input:hover, textarea:hover{
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+    } */
+    
+    form .btnDiv{
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    form .btnDiv button{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: var(--darkColor);
+        box-shadow: var(--colorOne) 1px 2px 5px 0px;
+        color: var(--colorOne);
+        margin: 0 auto;
+    }
+    
+    form .btnDiv button:hover{
+        /* box-shadow: var(--colorOne) 5px 7px 10px 5px; */
+        /* box-shadow: var(--colorOne) 3px 2px 5px 0px; */
+        font-size: 20px;
+    }
+    
 }
 
 @keyframes moveThemeChanger {
@@ -53,30 +414,6 @@ h1, h2, h3{
     }
 }
 
-.mainPage .box .boxOne span{
-    /* background-color: var(--colorOne); */
-    color: var(--colorOne);
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    border-radius: 10px;
-    padding: 10px;
-    animation: moveMainText 3s linear;
-}
-
-.mainPage .box .boxOne img{
-    width: 100px;
-    margin-top: 20px;
-    animation: moveMainText 3s linear;
-}
-
-.mainPage .box .boxTwo{
-    text-align: center;
-    text-decoration: none;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: moveLinkBtns 3s linear 1;
-}
 
 @keyframes moveMainText {
     from{
@@ -96,76 +433,6 @@ h1, h2, h3{
     }
 }
 
-.linkedin{
-    background-color: var(--colorOne);
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--darkColor);
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--colorOne) 2px solid;
-}
-
-.linkedin:hover{
-    background-color: var(--darkColor);
-    color: var(--colorOne);
-}
-
-.github{
-    background-color: var(--darkColor);
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--colorOne);
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--colorOne);
-}
-
-.github:hover{
-    background-color: var(--colorOne);
-    color: var(--darkColor);
-}
-.mainPage .box .boxThree{
-    display: flex;
-    justify-content: space-around;
-}
-.mainPage .box .boxThree a{
-    flex-wrap: wrap;
-    background-color: var(--darkColor);
-    width: fit-content;
-    margin-top: 40px;
-    padding: 6px;
-    height: 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--colorOne);
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--colorOne);
-    /* border: none; */
-    animation: LinksAnimation 2s linear 1;
-}
-
-.mainPage .box .boxThree a:hover{
-    background-color: var(--colorOne);
-    color: var(--darkColor);
-}
 
 @keyframes LinksAnimation{
     from{
@@ -176,96 +443,6 @@ h1, h2, h3{
     }
 }
 
-.about{
-    color: var(--darkColor);
-    width: 80%;
-    margin: 0 auto;
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-
-.about img{
-    background-color: var(--darkColor);
-    color: var(--colorOne);
-    text-align: center;
-    border-radius: 100%;
-    width: 100px;
-}
-
-
-.about .head{
-    width: 270px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    background-color: var(--darkColor);
-    color: var(--colorOne);
-}
-
-.about .head h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.about .text{
-    background-color: var(--darkColor);
-    color: var(--colorOne);
-    text-align: center;
-    width: 96%;
-    padding: 20px;
-}
-
-body hr{
-    width: 70%;
-    height: 1px;
-    box-shadow: var(--colorOne) 1px 0px 3px 1px;
-    background-color: var(--colorOne);
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.skills {
-    height: 300px;
-    padding: 20px;
-    overflow: hidden;
-}
-
-.skills .div {
-    display: flex;
-    animation: moveRow 15s linear infinite;
-    position: relative;
-    animation-direction: alternate-reverse;
-}
-
-.skills div div {
-    min-width: 200px;
-    max-width: auto;
-    height: 50px;
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    color: var(--colorOne);
-    text-align: center;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-.skills h2 {
-    color: var(--colorOne);
-    text-align: center;
-    font-size: 50px;
-}
 
 @keyframes moveRow {
     0% {
@@ -274,151 +451,4 @@ body hr{
     100% {
         transform: translateX(-170%); /* Move out of the view */
     }
-}
-
-
-.Experience{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-    color: var(--colorOne);
-    text-align: center;
-    box-shadow: var(--colorOne) 1px 5px 10px 3px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.exBox{
-    width: 40%;
-    height: auto;
-    box-shadow: var(--colorOne) 1px 2px 5px 3px;
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-.exBox:hover{
-    box-shadow: var(--colorOne) 1px 5px 10px 3px;
-}
-
-.exBox h2{
-    font-size: 20px;
-}
-
-.ExAndProjects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 100px;
-}
-
-.ExAndProjects .Experience {
-    width: 40%;
-    height: 300px auto;
-    border-radius: 20px;
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    padding: 20px;
-}
-
-.ExAndProjects .img, img{
-    width: 100px;
-    margin: 0 auto;
-}
-
-.ExAndProjects .img{
-    text-align: center;
-    width: 200px;
-}
-
-.ExAndProjects .txt{
-    margin: 0 auto;
-}
-
-.readMore{
-    width: 100px;
-    min-height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: var(--colorOne);
-    background-color: var(--darkColor);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.readMore a{
-    text-decoration: none;
-    color: var(--colorOne);
-    font-size: 17px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.readMore:hover{
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-}
-
-
-form{
-    margin-top: 200px;
-    width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    border-radius: 20px;
-    margin-bottom: 100px;
-}
-
-form div{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-form input, textarea{
-    width: 100%;
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    color: var(--colorOne);
-    background-color: var(--darkColor);
-    text-align: center;
-    resize: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* form input:hover, textarea:hover{
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-} */
-
-form .btnDiv{
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-form .btnDiv button{
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background-color: var(--darkColor);
-    box-shadow: var(--colorOne) 1px 2px 5px 0px;
-    color: var(--colorOne);
-    margin: 0 auto;
-}
-
-form .btnDiv button:hover{
-    /* box-shadow: var(--colorOne) 5px 7px 10px 5px; */
-    /* box-shadow: var(--colorOne) 3px 2px 5px 0px; */
-    font-size: 20px;
 }
